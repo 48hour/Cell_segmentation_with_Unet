@@ -22,5 +22,8 @@ Distributed under the MIT License.
 ![ex_screenshot](img/Res_Unet.png)
 https://www.researchgate.net/figure/Fully-Residual-U-Net-architecture-Input-size-is-written-on-the-side-of-each-box-The_fig2_335802605
 
+# License
+Distributed under the MIT License.
+
 
 
