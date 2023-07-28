@@ -22,13 +22,10 @@ Distributed under the MIT License.
 ## Training History
 Epoch : 100 , Batch : 4, Optimizer : Adam, lr = 1e-4, Augmentation : random_flip
 
-<figure class="half">
-  <a href="link"><img src="./img/IoU_Unet_grayscale.png"></a>
-  <a href="link"><img src="./img/Loss_Unet_grayscale"></a>
-</figure>
 
 (img/Res_Unet.png)|(img/Res_Unet.png)
 ---|---|
+
 
 "./img/IoU_Unet_grayscale.png" | "./img/Loss_Unet_grayscale"
 ---|---|
