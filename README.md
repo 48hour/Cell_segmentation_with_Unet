@@ -26,13 +26,18 @@ https://www.researchgate.net/figure/Fully-Residual-U-Net-architecture-Input-size
 ## Training History
 Epoch : 100 , Batch : 4, Optimizer : Adam, lr = 1e-4, Augmentation : random_flip
 
-
 ## Result
+
+
+
+## References
+
+
+
+
 
 ## License
 Distributed under the MIT License.
-
-
 
 
 
