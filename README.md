@@ -31,8 +31,7 @@ Epoch : 100 , Batch : 4, Optimizer : Adam, lr = 1e-4, Augmentation : random_flip
 
 
 ## References
-
-
+Blood Cell Segmentation Dataset[Kaggle].https://www.kaggle.com/datasets/jeetblahiri/bccd-dataset-with-mask
 
 
 
