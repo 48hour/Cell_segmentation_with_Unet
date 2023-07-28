@@ -1,5 +1,8 @@
 # Blood_cell_segmentation_with_Unet
 
+## Overview
+Cell segmentation is an important part of the detection and classification of tumor or disease cells in the context of pathological tissue examination. The segmentation of cancerous tissue is of great help in the development of cancer diagnosis and treatment. We believe that it is essential to explain fine needle aspiration cytology and exclusion cytology, which are used in various tests, in order to diagnose with AI and convince users. In addition to the diagnostic model, we need to understand how cancer cells are distributed and how many there are. We tried to perform cell segmentation, which is the basis for this, with Unet and ResUnet architecture.
+
 ## Dataset source
 https://www.kaggle.com/datasets/jeetblahiri/bccd-dataset-with-mask
 
