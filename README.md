@@ -23,7 +23,7 @@ Distributed under the MIT License.
 Epoch : 100 , Batch : 4, Optimizer : Adam, lr = 1e-4, Augmentation : random_flip
 
 
-(img/Res_Unet.png)|(img/Res_Unet.png)
+![ex_screenshot](img/Res_Unet.png)|![ex_screenshot](img/Res_Unet.png)
 ---|---|
 
 
