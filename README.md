@@ -27,7 +27,7 @@ Epoch : 100 , Batch : 4, Optimizer : Adam, lr = 1e-4, Augmentation : random_flip
   <a href="link"><img src="./img/Loss_Unet_grayscale"></a>
 </figure>
 
-./img/IoU_Unet_grayscale.png | ./img/Loss_Unet_grayscale
+"./img/IoU_Unet_grayscale.png" | "./img/Loss_Unet_grayscale"
 ---|---|
 
 
