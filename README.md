@@ -22,7 +22,7 @@ Distributed under the MIT License.
 ## Training History
 Epoch : 100 , Batch : 4, Optimizer : Adam, lr = 1e-4, Augmentation : random_flip
 
-![ex_screenshot](./img/IoU_Unet_grayscale.png)|![./img/Loss_Unet_grayscale)
+![ex_screenshot](./img/IoU_Unet_grayscale.png)|![ex_screenshot](./img/Loss_Unet_grayscale.png)
 ---|---|
 
 ## Result
