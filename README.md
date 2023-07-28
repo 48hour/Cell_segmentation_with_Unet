@@ -18,5 +18,9 @@ Distributed under the MIT License.
 # Unet architecture
 ![ex_screenshot](img/Unet.png)
 
+# ResUnet architecture
+![ex_screenshot](img/Res_Unet.png)
+https://www.researchgate.net/figure/Fully-Residual-U-Net-architecture-Input-size-is-written-on-the-side-of-each-box-The_fig2_335802605
+
 
 
