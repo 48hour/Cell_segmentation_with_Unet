@@ -37,7 +37,7 @@ Blood Cell Segmentation Dataset[Kaggle].https://www.kaggle.com/datasets/jeetblah
 U-Net: Convolutional Networks for Biomedical Image Segmentation[arXiv].https://arxiv.org/abs/1505.04597v1
 
 
-Estibaliz Gómez de Mariscal, Martin Maška, Anna Kotrbová, Vendula Pospichalova, Pavel Matula & Arrate Muñoz-Barrutia (2019) Deep-Learning-Based Segmentation of Small Extracellular Vesicles in Transmission Electron Microscopy Images.https://www.researchgate.net/publication/335802605_Deep-Learning-Based_Segmentation_of_Small_Extracellular_Vesicles_in_Transmission_Electron_Microscopy_Images
+Estibaliz Gómez de Mariscal, Martin Maška, Anna Kotrbová, Vendula Pospichalova, Pavel Matula & Arrate Muñoz-Barrutia (2019) Deep-Learning-Based Segmentation of Small Extracellular Vesicles in Transmission Electron Microscopy Images .https://www.researchgate.net/publication/335802605_Deep-Learning-Based_Segmentation_of_Small_Extracellular_Vesicles_in_Transmission_Electron_Microscopy_Images
 
 
 ## License
