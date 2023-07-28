@@ -11,6 +11,10 @@ With the advent of deep learing algorithms in medial domain, there is a need for
 # Dataset source
 https://www.kaggle.com/datasets/jeetblahiri/bccd-dataset-with-mask
 
+A total of 2656 images are available. 1328 Original blood cell images with 1328 corresponding ground truths. Out of that, Jeet B Lahiri separated the training and testing sets with 1169 images and 159 images respectively.
+
+Distributed under the MIT License.
+
 
 
 
