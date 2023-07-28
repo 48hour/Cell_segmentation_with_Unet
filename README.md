@@ -16,11 +16,11 @@ Epoch : 100 , Batch : 4, Optimizer : Adam, lr = 1e-4, Augmentation : random_flip
 ## Result
 
 ##### Unet_grayscale
-![ex_screenshot](./img/Unet_grayscale_output2.png)
-![ex_screenshot](./img/Unet_grayscale_output5.png)
-![ex_screenshot](./img/Unet_grayscale_output7.png)
-![ex_screenshot](./img/Unet_grayscale_output8.png)
-![ex_screenshot](./img/Unet_grayscale_output9.png)
+![ex_screenshot](./img/Unet_grayscale_output2.png)|![ex_screenshot](./img/Unet_grayscale_output5.png)
+---|---|
+
+![ex_screenshot](./img/Unet_grayscale_output7.png)|![ex_screenshot](./img/Unet_grayscale_output9.png)
+---|---|
 
 
 ## Dataset source
