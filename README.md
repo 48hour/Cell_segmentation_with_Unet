@@ -17,6 +17,7 @@ Distributed under the MIT License.
 
 # Unet architecture
 ![ex_screenshot](img/Unet.png)
+https://arxiv.org/abs/1505.04597v1
 
 # ResUnet architecture
 ![ex_screenshot](img/Res_Unet.png)
