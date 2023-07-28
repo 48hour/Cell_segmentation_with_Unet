@@ -1,4 +1,4 @@
-# Blood-cell-segmentation with Unet
+# Blood_cell_segmentation_with_Unet
 
 # Authors
 Deponker Sarker Depto, Shazidur Rahman, Md. Mekayel Hosen, Mst Shapna Akter, Tamanna Rahman Reme, Aimon Rahman, Hasib Zunai, M. Sohel Rahman and M.R.C.Mahdy
