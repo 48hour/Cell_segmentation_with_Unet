@@ -15,16 +15,19 @@ Epoch : 100 , Batch : 4, Optimizer : Adam, lr = 1e-4, Augmentation : random_flip
 
 ## Result
 
-
 ##### Unet_grayscale
-
+![ex_screenshot](./img/Unet_grayscale_output2.png)
+![ex_screenshot](./img/Unet_grayscale_output5.png)
+![ex_screenshot](./img/Unet_grayscale_output7.png)
+![ex_screenshot](./img/Unet_grayscale_output8.png)
+![ex_screenshot](./img/Unet_grayscale_output9.png)
 
 
 ## Dataset source
 A total of 2656 images are available. 1328 Original blood cell images with 1328 corresponding ground truths. Out of that, Jeet B Lahiri separated the training and testing sets with 1169 images and 159 images respectively.
 Data gernerate by Deponker, Sarker Depto, Shazidur Rahman, Md. Mekayel Hosen, Mst Shapna Akter, Tamanna Rahman Reme, Aimon Rahman, Hasib Zunai, M. Sohel Rahman and M.R.C.Mahdy
 
-  #### Short Description
+#### Short Description
 With the advent of deep learing algorithms in medial domain, there is a need for quality and large datasets. In this work, we introduced the largest microscopic blood cell segmentation dataset and benchmark different state-of-the-art algorithms on it. Our findings and contributions are particularly helpful for researchers working in deep learning with applications in medial domain.
 ![ex_screenshot](./img/Dataset_img.png)
 
