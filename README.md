@@ -27,7 +27,7 @@ Distributed under the MIT License.
 ## Result
 
 ### Unet_grayscale
-We can see that it is overfitting in both grayscale and RGB from the traning history. Below is the data from Unet_grayscale.
+We can see that Unet_grayscale is overfitting from the traning history. The same is true for RGB. Below is the data for Unet_grayscale. 
 
 ##### Training History
 Epoch : 100 , Batch : 4, Optimizer : Adam, lr = 1e-4, Augmentation : random_flip
@@ -45,6 +45,8 @@ Epoch : 100 , Batch : 4, Optimizer : Adam, lr = 1e-4, Augmentation : random_flip
 ### ResUnet_grayscale
 To prevent overfitting, we tried a more complex model, ResUnet. Looking at the loss rate, we concluded that ResUnet prevented overfitting. However, we noticed an increase in the loss value at certain epochs. We decided that the learning rate was too high to reach a local minimum.
 
+And we can see the performance decrease when we look at test_img. But overfitting has been avoided. Experiment by adding a way to stably reduce the loss value.
+
 ##### Training History
 Epoch : 100 , Batch : 4, Optimizer : Adam, lr = 1e-4, Augmentation : random_flip
 
@@ -57,7 +59,8 @@ Epoch : 100 , Batch : 4, Optimizer : Adam, lr = 1e-4, Augmentation : random_flip
 
 ![ex_screenshot](./img/ResUnet_grayscale_output7.png)|![ex_screenshot](./img/ResUnet_grayscale_output9.png)
 ---|---|
- 
+
+### ResUnet_grayscale + Early stoping + Learnging rate scheduler 
 
 ## References
 [1] Olaf Ronneberger, Philipp Fischer, Thomas Brox. U-Net: Convolutional Networks for Biomedical Image Segmentation. arXiv, 2015. https://arxiv.org/abs/1505.04597v1
