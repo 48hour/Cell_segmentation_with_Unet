@@ -26,7 +26,7 @@ Distributed under the MIT License.
 
 ## Result
 
-#### Unet_grayscale
+### Unet_grayscale
 We can see that it is overfitting in both grayscale and RGB from the traning history. Below is the data from Unet_grayscale.
 
 ##### Training History
@@ -42,7 +42,7 @@ Epoch : 100 , Batch : 4, Optimizer : Adam, lr = 1e-4, Augmentation : random_flip
 ![ex_screenshot](./img/Unet_grayscale_output7.png)|![ex_screenshot](./img/Unet_grayscale_output9.png)
 ---|---|
 
-#### ResUnet_grayscale
+### ResUnet_grayscale
 To prevent overfitting, we tried a more complex model, ResUnet. Looking at the loss rate, we concluded that ResUnet prevented overfitting. However, we noticed an increase in the loss value at certain epochs. We decided that the learning rate was too high to reach a local minimum.
 
 ##### Training History
