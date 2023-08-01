@@ -26,15 +26,18 @@ Distributed under the MIT License.
 
 ## Result
 
-#### Training History
-Epoch : 100 , Batch : 4, Optimizer : Adam, lr = 1e-4, Augmentation : random_flip
+We can see that it is overfitting in both grayscale and RGB from the traning history. Below is the data from Unet_grayscale.
+We tried a more complex ResUnet to prevent overfitting.
 
-##### Unet_grayscale
+#### Unet_grayscale
+
+##### Training History
+Epoch : 100 , Batch : 4, Optimizer : Adam, lr = 1e-4, Augmentation : random_flip
 
 ![ex_screenshot](./img/IoU_Unet_grayscale.png)|![ex_screenshot](./img/Loss_Unet_grayscale.png)
 ---|---|
 
-##### Unet_grayscale
+##### Test img
 ![ex_screenshot](./img/Unet_grayscale_output2.png)|![ex_screenshot](./img/Unet_grayscale_output5.png)
 ---|---|
 
