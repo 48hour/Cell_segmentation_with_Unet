@@ -60,7 +60,7 @@ Epoch : 100 , Batch : 4, Optimizer : Adam, lr = 1e-4, Augmentation : random_flip
 ![ex_screenshot](./img/ResUnet_grayscale_output7.png)|![ex_screenshot](./img/ResUnet_grayscale_output9.png)
 ---|---|
 
-### ResUnet_grayscale + Early stoping + Learnging rate scheduler 
+### ResUnet_grayscale + Early stoping + Learning rate scheduler 
 
 ## References
 [1] Olaf Ronneberger, Philipp Fischer, Thomas Brox. U-Net: Convolutional Networks for Biomedical Image Segmentation. arXiv, 2015. https://arxiv.org/abs/1505.04597v1
