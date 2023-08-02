@@ -42,6 +42,7 @@ Epoch : 100 , Batch : 4, Optimizer : Adam, lr = 1e-4, Augmentation : random_flip
 ![ex_screenshot](./img/Unet_grayscale_output7.png)|![ex_screenshot](./img/Unet_grayscale_output9.png)
 ---|---|
 
+
 ### ResUnet_grayscale
 To prevent overfitting, we tried a more complex model, ResUnet. Looking at the loss rate, we concluded that ResUnet prevented overfitting. However, we noticed an increase in the loss value at certain epochs. We decided that the learning rate was too high to reach a local minimum.
 
@@ -60,8 +61,11 @@ Epoch : 100 , Batch : 4, Optimizer : Adam, lr = 1e-4, Augmentation : random_flip
 ![ex_screenshot](./img/ResUnet_grayscale_output7.png)|![ex_screenshot](./img/ResUnet_grayscale_output9.png)
 ---|---|
 
+
 ### ResUnet_grayscale + Early stoping + Learning rate scheduler 
-Epoch : 100 , Batch : 4, Optimizer : Adam, lr = 1e-4, Augmentation : random_flip
+Epoch : 100 , Batch : 4, Optimizer : Adam, lr = 1e-4, Augmentation : random_flip, patience = 10
+scheduler = StepLR(optim, step_size=1, gamma=0.95)
+Early stop : 42epochs
 
 ![ex_screenshot](./img/IoU_ResUnet_scheduler.png)|![ex_screenshot](./img/Loss_ResUnet_scheduler.png)
 ---|---|
