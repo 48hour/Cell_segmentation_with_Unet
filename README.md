@@ -64,7 +64,9 @@ Epoch : 100 , Batch : 4, Optimizer : Adam, lr = 1e-4, Augmentation : random_flip
 
 ### ResUnet_grayscale + Early stoping + Learning rate scheduler 
 Epoch : 100 , Batch : 4, Optimizer : Adam, lr = 1e-4, Augmentation : random_flip, patience = 10
+
 scheduler = StepLR(optim, step_size=1, gamma=0.95)
+
 Early stop : 42epochs
 
 ![ex_screenshot](./img/IoU_ResUnet_scheduler.png)|![ex_screenshot](./img/Loss_ResUnet_scheduler.png)
