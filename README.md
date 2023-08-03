@@ -90,7 +90,7 @@ Early stop : 36epochs
 ![ex_screenshot](./img/VGG11Unet_output2.png)|![ex_screenshot](./img/VGG11Unet_output5.png)
 ---|---|
 
-![ex_screenshot](./imgVGG11Unet_output7.png)|![ex_screenshot](./img/VGG11Unet_scheduler_output9.png)
+![ex_screenshot](./img/VGG11Unet_output7.png)|![ex_screenshot](./img/VGG11Unet_output9.png)
 ---|---|
 
 ### VGG16Unet + Early stoping + Learning rate scheduler 
@@ -109,7 +109,7 @@ Early stop : 36epochs
 ![ex_screenshot](./img/VGG16Unet_output2.png)|![ex_screenshot](./img/VGG16Unet_output5.png)
 ---|---|
 
-![ex_screenshot](./imgVGG16Unet_output7.png)|![ex_screenshot](./img/VGG16Unet_scheduler_output9.png)
+![ex_screenshot](./img/VGG16Unet_output7.png)|![ex_screenshot](./img/VGG16Unet_output9.png)
 ---|---|
 
 ## References
