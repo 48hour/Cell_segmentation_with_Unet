@@ -17,13 +17,6 @@ With the advent of deep learing algorithms in medial domain, there is a need for
 
 Distributed under the MIT License.
 
-## Unet architecture
-![ex_screenshot](img/Unet.png)
-
-## ResUnet architecture
-![ex_screenshot](img/Res_Unet.png)
-
-
 ## Result
 
 ### Unet_grayscale
@@ -64,8 +57,6 @@ Epoch : 100 , Batch : 4, Optimizer : Adam, lr = 1e-4, Augmentation : random_flip
 
 ### ResUnet_grayscale + Early stoping + Learning rate scheduler 
 
-
-
 ##### Training History
 Epoch : 100 , Batch : 4, Optimizer : Adam, lr = 1e-4, Augmentation : random_flip, patience = 10
 
@@ -81,6 +72,44 @@ Early stop : 42epochs
 ---|---|
 
 ![ex_screenshot](./img/ResUnet_grayscale_scheduler_output7.png)|![ex_screenshot](./img/ResUnet_grayscale_scheduler_output9.png)
+---|---|
+
+### VGG11Unet + Early stoping + Learning rate scheduler 
+
+##### Training History
+Epoch : 100 , Batch : 4, Optimizer : Adam, lr = 1e-4, Augmentation : random_flip, patience = 10
+
+scheduler = ReduceLROnPlateau(optim, mode='min', factor=0.5, patience=5, min_lr=1e-6)
+
+Early stop : 36epochs
+
+![ex_screenshot](./img/IoU_VGG11Unet.png)|![ex_screenshot](./img/Loss_VGG11Unet.png)
+---|---|
+
+##### Test img
+![ex_screenshot](./img/VGG11Unet_output2.png)|![ex_screenshot](./img/VGG11Unet_output5.png)
+---|---|
+
+![ex_screenshot](./imgVGG11Unet_output7.png)|![ex_screenshot](./img/VGG11Unet_scheduler_output9.png)
+---|---|
+
+### VGG16Unet + Early stoping + Learning rate scheduler 
+
+##### Training History
+Epoch : 100 , Batch : 4, Optimizer : Adam, lr = 1e-4, Augmentation : random_flip, patience = 10
+
+scheduler = ReduceLROnPlateau(optim, mode='min', factor=0.5, patience=5, min_lr=1e-6)
+
+Early stop : 36epochs
+
+![ex_screenshot](./img/IoU_VGG16Unet.png)|![ex_screenshot](./img/Loss_VGG16Unet.png)
+---|---|
+
+##### Test img
+![ex_screenshot](./img/VGG16Unet_output2.png)|![ex_screenshot](./img/VGG16Unet_output5.png)
+---|---|
+
+![ex_screenshot](./imgVGG16Unet_output7.png)|![ex_screenshot](./img/VGG16Unet_scheduler_output9.png)
 ---|---|
 
 ## References
