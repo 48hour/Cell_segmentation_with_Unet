@@ -128,7 +128,7 @@ Early stop : 39epochs
 ![ex_screenshot](./img/AttentionUnet_output2.png)|![ex_screenshot](./img/AttentionUnet_output5.png)
 ---|---|
 
-![ex_screenshot](./img/Attention_output7.png)|![ex_screenshot](./img/AttentionUnet_output9.png)
+![ex_screenshot](./img/AttentionUnet_output7.png)|![ex_screenshot](./img/AttentionUnet_output9.png)
 ---|---|
 
 ## References
