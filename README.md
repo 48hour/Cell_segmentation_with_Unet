@@ -119,7 +119,7 @@ Epoch : 100 , Batch : 4, Optimizer : Adam, lr = 1e-4, Augmentation : random_flip
 
 scheduler = ReduceLROnPlateau(optim, mode='min', factor=0.5, patience=5, min_lr=1e-6)
 
-Early stop : 39epochs
+Early stop : 52epochs
 
 ![ex_screenshot](./img/IoU_AttentionUnet.png)|![ex_screenshot](./img/Loss_AttentionUnet.png)
 ---|---|
