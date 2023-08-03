@@ -112,6 +112,25 @@ Early stop : 39epochs
 ![ex_screenshot](./img/VGG16Unet_output7.png)|![ex_screenshot](./img/VGG16Unet_output9.png)
 ---|---|
 
+### AttentionUnet + Early stoping + Learning rate scheduler 
+
+##### Training History
+Epoch : 100 , Batch : 4, Optimizer : Adam, lr = 1e-4, Augmentation : random_flip, patience = 10
+
+scheduler = ReduceLROnPlateau(optim, mode='min', factor=0.5, patience=5, min_lr=1e-6)
+
+Early stop : 39epochs
+
+![ex_screenshot](./img/IoU_AttentionUnet.png)|![ex_screenshot](./img/Loss_AttentionUnet.png)
+---|---|
+
+##### Test img
+![ex_screenshot](./img/AttentionUnet_output2.png)|![ex_screenshot](./img/AttentionUnet_output5.png)
+---|---|
+
+![ex_screenshot](./img/Attention_output7.png)|![ex_screenshot](./img/AttentionUnet_output9.png)
+---|---|
+
 ## References
 [1] JEET B. LAHIRI. "Blood Cell Segmentation Dataset." Kaggle. July 10, 2023. https://www.kaggle.com/datasets/jeetblahiri/bccd-dataset-with-mask
 
