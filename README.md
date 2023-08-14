@@ -29,8 +29,8 @@ And we can see the performance decrease when we look at test_img. But overfittin
 ##### Training History
 Epoch : 100 , Batch : 4, Optimizer : Adam, lr = 1e-4, Augmentation : random_flip
 
-<img src="./img/IoU_Unet_grayscale.png" alt="ex_screenshot" width="100%"> | <img src="./img/Loss_Unet_grayscale.png" alt="ex_screenshot" width="100%"> | <img src="./img/IoU_ResUnet_grayscale.png" alt="ex_screenshot" width="100%"> | <img src="./img/Loss_ResUnet_grayscale.png" alt="ex_screenshot" width="100%">
----|---|---|---
+![ex_screenshot](./image/Unet_gray.png)|![ex_screenshot](./image/ResUnet_gray.png)
+---|---|
 
 
 ### ResUnet_grayscale + Early stoping + Learning rate scheduler 
