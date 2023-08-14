@@ -41,8 +41,9 @@ Epoch : 100 , Batch : 4, Optimizer : Adam, lr = 1e-4, Augmentation : random_flip
 
 scheduler = ReduceLROnPlateau(optim, mode='min', factor=0.5, patience=5, min_lr=1e-6)
 
-![ex_screenshot](./img/IoU_ResUnet_scheduler.png)|![ex_screenshot](./img/Loss_ResUnet_scheduler.png)
+ResUnet|UnetVGG11|
 ---|---|
+![ex_screenshot](./image/ResUnet_sch.png)|![ex_screenshot](./image/UnetVGG11.png)|
 
 ### VGG11Unet + Early stoping + Learning rate scheduler 
 
