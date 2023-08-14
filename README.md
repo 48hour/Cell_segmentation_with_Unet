@@ -8,6 +8,7 @@ Medical AI should be reliable by ensuring that the process of deriving results i
 Our thyroid cancer data does not have an annotation image. Therefore, we will utilize similar data to create a mask generation model for our data. Also, the thyroid cancer data is restricted data belonging to our project and cannot be released to the public. Attach a picture of the experiment, replacing it with any image from the "Medullary Thyroid Carcinoma"[6] paper that is most similar to our data.
 
 ## Dataset source
+### 1.
 A total of 2656 images are available. 1328 Original blood cell images with 1328 corresponding ground truths. Out of that, Jeet B Lahiri separated the training and testing sets with 1169 images and 159 images respectively.
 Data gernerate by Deponker, Sarker Depto, Shazidur Rahman, Md. Mekayel Hosen, Mst Shapna Akter, Tamanna Rahman Reme, Aimon Rahman, Hasib Zunai, M. Sohel Rahman and M.R.C.Mahdy
 
@@ -16,6 +17,14 @@ With the advent of deep learing algorithms in medial domain, there is a need for
 ![ex_screenshot](./img/Dataset_img.png)
 
 Distributed under the MIT License.
+
+### 2.
+This dataset, also known as PanNuke, contains semi automatically generated nuclei instance segmentation and classification images with exhaustive nuclei labels across 19 different tissue types. The dataset consists of 481 visual fields, of which 312 are randomly sampled from more than 20K whole slide images at different magnifications, from multiple data sources.
+In total the dataset contains 205,343 labeled nuclei, each with an instance segmentation mask. Models trained on PanNuke can aid in whole slide image tissue type segmentation, and generalize to new tissues.
+
+![ex_screenshot](./img/Dataset_img2.png)
+
+Distributed under the CC BY NC SA 4.0
 
 ## Result
 
@@ -51,7 +60,7 @@ UnetAttention|UnetVGG11|
 
 
 ## References
-[1] JEET B. LAHIRI. "Blood Cell Segmentation Dataset." Kaggle. July 10, 2023. https://www.kaggle.com/datasets/jeetblahiri/bccd-dataset-with-mask
+[1] JEET B. LAHIRI. "Blood Cell Segmentation Dataset." Kaggle. 2023. https://www.kaggle.com/datasets/jeetblahiri/bccd-dataset-with-mask
 
 
 [2] Olaf Ronneberger, Philipp Fischer, Thomas Brox. U-Net: Convolutional Networks for Biomedical Image Segmentation. arXiv, 2015. https://arxiv.org/abs/1505.04597v1
@@ -67,6 +76,10 @@ UnetAttention|UnetVGG11|
 [6] Michiya Nishino, Marc Philippe Pusztaszeri, Martha B. Pitman. Medullary Thyroid Carcinoma, In book: The Bethesda System for Reporting Thyroid Cytopathology (pp.157-175). ResearchGate, 2018. 
 https://www.researchgate.net/publication/319449480_Medullary_Thyroid_Carcinoma
 
+[7] Larxel. "Cancer Instance Segmentation and Classification 1,2,3" Kaggle. 2022. https://www.kaggle.com/datasets/andrewmvd/cancer-inst-segmentation-and-classification
+
+[8] Gamper, Jevgenij and Koohbanani, Navid Alemi and Graham, Simon and Jahanifar, Mostafa and Benet, Ksenija and Khurram, Syed Ali and Azam, Ayesha and Hewitt, Katherine and Rajpoot, Nasir. PanNuke Dataset Extension, Insights and Baselines. arXiv, 2020.
+https://arxiv.org/abs/2003.10778
 
 
 ## License
