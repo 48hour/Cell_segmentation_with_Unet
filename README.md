@@ -20,11 +20,11 @@ Distributed under the MIT License.
 ## Result
 
 ### Unet_grayscale & ResUnet_grayscale
-We can see that Unet_grayscale is overfitting from the traning history. The same is true for RGB. Below is the data for Unet_grayscale. 
+You can see in the traning history that Unet_grayscale is being overfitted. The same is true for RGB.
 
-ResUnet. Looking at the loss rate, we concluded that ResUnet prevented overfitting. However, we noticed an increase in the loss value at certain epochs. We decided that the learning rate was too high to reach a local minimum.
+For ResUnet, we noticed an exploding gradient in the loss value at certain epochs. We determined that the learning rate was too high to reach a local minimum.
 
-And we can see the performance decrease when we look at test_img. But overfitting has been avoided. Experiment by adding a way to stably reduce the loss value.
+So we experimented by adding different models, schedulers, and early stopping.
 
 ##### Training History
 Epoch : 100 , Batch : 4, Optimizer : Adam, lr = 1e-4, Augmentation : random_flip
