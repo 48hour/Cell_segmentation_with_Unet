@@ -32,7 +32,6 @@ Epoch : 100 , Batch : 4, Optimizer : Adam, lr = 1e-4, Augmentation : random_flip
 Unet|ResUnet|
 ---|---|
 ![ex_screenshot](./image/Unet_gray.png)|![ex_screenshot](./image/ResUnet_gray.png)|
----|---|
 
 
 ### ResUnet, VGG11Unet, VGG16Unet, AttentionUnet with Early stoping & Learning rate scheduler 
