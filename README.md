@@ -14,7 +14,7 @@ Data gernerate by Deponker, Sarker Depto, Shazidur Rahman, Md. Mekayel Hosen, Ms
 
 #### Short Description
 With the advent of deep learing algorithms in medial domain, there is a need for quality and large datasets. In this work, we introduced the largest microscopic blood cell segmentation dataset and benchmark different state-of-the-art algorithms on it. Our findings and contributions are particularly helpful for researchers working in deep learning with applications in medial domain.
-![ex_screenshot](./img/Dataset_img.png)
+![ex_screenshot](./image/Dataset_img.png)
 
 Distributed under the MIT License.
 
@@ -22,7 +22,7 @@ Distributed under the MIT License.
 This dataset, also known as PanNuke, contains semi automatically generated nuclei instance segmentation and classification images with exhaustive nuclei labels across 19 different tissue types. The dataset consists of 481 visual fields, of which 312 are randomly sampled from more than 20K whole slide images at different magnifications, from multiple data sources.
 In total the dataset contains 205,343 labeled nuclei, each with an instance segmentation mask. Models trained on PanNuke can aid in whole slide image tissue type segmentation, and generalize to new tissues.
 
-![ex_screenshot](./img/Dataset_img2.png)
+![ex_screenshot](./image/Dataset_img2.png)
 
 Distributed under the CC BY NC SA 4.0
 
