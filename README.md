@@ -28,14 +28,6 @@ Epoch : 100 , Batch : 4, Optimizer : Adam, lr = 1e-4, Augmentation : random_flip
 ![ex_screenshot](./img/IoU_Unet_grayscale.png)|![ex_screenshot](./img/Loss_Unet_grayscale.png)
 ---|---|
 
-##### Test img
-![ex_screenshot](./img/Unet_grayscale_output2.png)|![ex_screenshot](./img/Unet_grayscale_output5.png)
----|---|
-
-![ex_screenshot](./img/Unet_grayscale_output7.png)|![ex_screenshot](./img/Unet_grayscale_output9.png)
----|---|
-
-
 ### ResUnet_grayscale
 To prevent overfitting, we tried a more complex model, ResUnet. Looking at the loss rate, we concluded that ResUnet prevented overfitting. However, we noticed an increase in the loss value at certain epochs. We decided that the learning rate was too high to reach a local minimum.
 
@@ -47,14 +39,6 @@ Epoch : 100 , Batch : 4, Optimizer : Adam, lr = 1e-4, Augmentation : random_flip
 ![ex_screenshot](./img/IoU_ResUnet_grayscale.png)|![ex_screenshot](./img/Loss_ResUnet_grayscale.png)
 ---|---|
 
-##### Test img
-![ex_screenshot](./img/ResUnet_grayscale_output2.png)|![ex_screenshot](./img/ResUnet_grayscale_output5.png)
----|---|
-
-![ex_screenshot](./img/ResUnet_grayscale_output7.png)|![ex_screenshot](./img/ResUnet_grayscale_output9.png)
----|---|
-
-
 ### ResUnet_grayscale + Early stoping + Learning rate scheduler 
 
 ##### Training History
@@ -65,13 +49,6 @@ scheduler = StepLR(optim, step_size=1, gamma=0.95)
 Early stop : 42epochs
 
 ![ex_screenshot](./img/IoU_ResUnet_scheduler.png)|![ex_screenshot](./img/Loss_ResUnet_scheduler.png)
----|---|
-
-##### Test img
-![ex_screenshot](./img/ResUnet_grayscale_scheduler_output2.png)|![ex_screenshot](./img/ResUnet_grayscale_scheduler_output5.png)
----|---|
-
-![ex_screenshot](./img/ResUnet_grayscale_scheduler_output7.png)|![ex_screenshot](./img/ResUnet_grayscale_scheduler_output9.png)
 ---|---|
 
 ### VGG11Unet + Early stoping + Learning rate scheduler 
@@ -86,13 +63,6 @@ Early stop : 36epochs
 ![ex_screenshot](./img/IoU_VGG11Unet.png)|![ex_screenshot](./img/Loss_VGG11Unet.png)
 ---|---|
 
-##### Test img
-![ex_screenshot](./img/VGG11Unet_output2.png)|![ex_screenshot](./img/VGG11Unet_output5.png)
----|---|
-
-![ex_screenshot](./img/VGG11Unet_output7.png)|![ex_screenshot](./img/VGG11Unet_output9.png)
----|---|
-
 ### VGG16Unet + Early stoping + Learning rate scheduler 
 
 ##### Training History
@@ -105,13 +75,6 @@ Early stop : 39epochs
 ![ex_screenshot](./img/IoU_VGG16Unet.png)|![ex_screenshot](./img/Loss_VGG16Unet.png)
 ---|---|
 
-##### Test img
-![ex_screenshot](./img/VGG16Unet_output2.png)|![ex_screenshot](./img/VGG16Unet_output5.png)
----|---|
-
-![ex_screenshot](./img/VGG16Unet_output7.png)|![ex_screenshot](./img/VGG16Unet_output9.png)
----|---|
-
 ### AttentionUnet + Early stoping + Learning rate scheduler 
 
 ##### Training History
@@ -122,13 +85,6 @@ scheduler = ReduceLROnPlateau(optim, mode='min', factor=0.5, patience=5, min_lr=
 Early stop : 52epochs
 
 ![ex_screenshot](./img/IoU_AttentionUnet.png)|![ex_screenshot](./img/Loss_AttentionUnet.png)
----|---|
-
-##### Test img
-![ex_screenshot](./img/AttentionUnet_output2.png)|![ex_screenshot](./img/AttentionUnet_output5.png)
----|---|
-
-![ex_screenshot](./img/AttentionUnet_output7.png)|![ex_screenshot](./img/AttentionUnet_output9.png)
 ---|---|
 
 ## References
