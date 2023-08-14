@@ -29,7 +29,7 @@ So we experimented by adding different models, schedulers, and early stopping.
 ##### Training History
 Epoch : 100 , Batch : 4, Optimizer : Adam, lr = 1e-4, Augmentation : random_flip
 
-Header 1 | Header 2|
+Unet|ResUnet|
 ---|---|
 ![ex_screenshot](./image/Unet_gray.png)|![ex_screenshot](./image/ResUnet_gray.png)|
 ---|---|
