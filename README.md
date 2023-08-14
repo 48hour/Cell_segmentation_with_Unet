@@ -8,7 +8,7 @@ Medical AI should be reliable by ensuring that the process of deriving results i
 Our thyroid cancer data does not have an annotation image. Therefore, we will utilize similar data to create a mask generation model for our data. Also, the thyroid cancer data is restricted data belonging to our project and cannot be released to the public. Attach a picture of the experiment, replacing it with any image from the "Medullary Thyroid Carcinoma"[6] paper that is most similar to our data.
 
 ## Dataset source
-### 1.
+### 1. "Blood Cell Segmentation Dataset"
 A total of 2656 images are available. 1328 Original blood cell images with 1328 corresponding ground truths. Out of that, Jeet B Lahiri separated the training and testing sets with 1169 images and 159 images respectively.
 Data gernerate by Deponker, Sarker Depto, Shazidur Rahman, Md. Mekayel Hosen, Mst Shapna Akter, Tamanna Rahman Reme, Aimon Rahman, Hasib Zunai, M. Sohel Rahman and M.R.C.Mahdy
 
@@ -18,7 +18,7 @@ With the advent of deep learing algorithms in medial domain, there is a need for
 
 Distributed under the MIT License.
 
-### 2.
+### 2. "Cancer Instance Segmentation and Classification 1,2,3"
 This dataset, also known as PanNuke, contains semi automatically generated nuclei instance segmentation and classification images with exhaustive nuclei labels across 19 different tissue types. The dataset consists of 481 visual fields, of which 312 are randomly sampled from more than 20K whole slide images at different magnifications, from multiple data sources.
 In total the dataset contains 205,343 labeled nuclei, each with an instance segmentation mask. Models trained on PanNuke can aid in whole slide image tissue type segmentation, and generalize to new tissues.
 
