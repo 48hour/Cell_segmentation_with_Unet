@@ -1,4 +1,4 @@
-# Thyroid-cell-segmentation-and-Count-with-Unet-n-OpenCV
+# Thyroid_cell_segmentation_and_Count_with_Unet_n_OpenCV
 
 ## Overview
 For thyroid cancer and many other types of cancer, processes such as fine needle aspiration cytology and cytoreductive testing are essential. Cancer is diagnosed by looking at the cells. Artificial intelligence can be added to this process to bring convenience and speed to diagnosis. In addition, cell segmentation is important for the detection and classification of tumor or disease cells in the context of pathological tissue examination. The segmentation of cancer tissue helps in the development of cancer diagnosis and treatment. 
@@ -43,7 +43,7 @@ For ResUnet, we noticed an exploding gradient in the loss value at certain epoch
 
 So we experimented by adding different models, schedulers, and early stopping.
 
-### ResUnet, VGG11Unet, VGG16Unet, AttentionUnet with Early stoping & Learning rate scheduler 
+### ResUnet, VGG11Unet, VGG16Unet, AttentionUnet + Early stoping & Learning rate scheduler 
 
 ##### Training History
 Epoch : 100 , Batch : 4, Optimizer : Adam, lr = 1e-4, Augmentation : random_flip, patience = 10
@@ -58,6 +58,35 @@ UnetAttention|UnetVGG11|
 ---|---|
 ![ex_screenshot](./image/UnetAttention.png)|![ex_screenshot](./image/UnetVGG16.png)|
 
+Overfitting occurred in all models. After adding L2-Regularization and drop out, I tried reducing the number of hidden units and layers, but the results were the same.
+
+So we add more data. Since our task is lightweight sementic segmentation, we need to preprocess the data for instance segmentation.
+
+The preprocessed mask is shown below.
+
+![ex_screenshot](./image/Process_mask.png)
+---|
+
+### Additional data Unet, ResUnet, VGG11Unet, VGG16Unet, AttentionUnet + Learning rate scheduler 
+
+##### Training History
+Epoch : 50 , Batch : 4, Optimizer : Adam, lr = 1e-4, Augmentation : random_flip, patience = 10
+
+scheduler = ReduceLROnPlateau(optim, mode='min', factor=0.5, patience=5, min_lr=1e-6)
+
+Unet|ResUnet|
+---|---|
+![ex_screenshot](./image/Add_data_Unet.png)|![ex_screenshot](./image/Add_data_ResUnet.png)|
+
+UnetVGG11|UnetVGG16|
+---|---|
+![ex_screenshot](./image/Add_data_VGG11.png)|![ex_screenshot](./image/Add_data_VGG16.png)|
+
+UnetAttention||
+---|---|
+![ex_screenshot](./image/Add_data_Attention.png)
+
+We excluded early stopping to see the overall performance. Unet is overfitting. ResUnet suffers from gradient exploding. VGG11, VGG16, and Attention models showed ideal traning history.
 
 ## References
 [1] JEET B. LAHIRI. "Blood Cell Segmentation Dataset." Kaggle. 2023. https://www.kaggle.com/datasets/jeetblahiri/bccd-dataset-with-mask
