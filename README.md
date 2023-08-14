@@ -25,8 +25,8 @@ We can see that Unet_grayscale is overfitting from the traning history. The same
 ##### Training History
 Epoch : 100 , Batch : 4, Optimizer : Adam, lr = 1e-4, Augmentation : random_flip
 
-![ex_screenshot](./img/IoU_Unet_grayscale.png)|![ex_screenshot](./img/Loss_Unet_grayscale.png)
----|---|
+![ex_screenshot](./img/IoU_Unet_grayscale.png)|![ex_screenshot](./img/Loss_Unet_grayscale.png)|![ex_screenshot](./img/IoU_ResUnet_grayscale.png)|![ex_screenshot](./img/Loss_ResUnet_grayscale.png)
+---|---|---|---|
 
 ### ResUnet_grayscale
 To prevent overfitting, we tried a more complex model, ResUnet. Looking at the loss rate, we concluded that ResUnet prevented overfitting. However, we noticed an increase in the loss value at certain epochs. We decided that the learning rate was too high to reach a local minimum.
@@ -35,9 +35,6 @@ And we can see the performance decrease when we look at test_img. But overfittin
 
 ##### Training History
 Epoch : 100 , Batch : 4, Optimizer : Adam, lr = 1e-4, Augmentation : random_flip
-
-![ex_screenshot](./img/IoU_ResUnet_grayscale.png)|![ex_screenshot](./img/Loss_ResUnet_grayscale.png)
----|---|
 
 ### ResUnet_grayscale + Early stoping + Learning rate scheduler 
 
