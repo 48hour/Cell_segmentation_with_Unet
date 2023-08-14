@@ -5,7 +5,7 @@ For thyroid cancer and many other types of cancer, processes such as fine needle
 
 Medical AI should be reliable by ensuring that the process of deriving results is differentiated and transparent. To make the thyroid cancer diagnosis model reliable, we identify the distribution and number of cancer cells. For this purpose, we tried cell segmentation with various architectures based on Unet. After creating a mask, we use OpenCV's watershed function to identify the number and distribution.
 
-Our thyroid cancer data does not have an annotation image. Therefore, we will utilize similar data to create a mask generation model for our data. Also, the thyroid cancer data is restricted data belonging to our project and cannot be released to the public. Attach a picture of the experiment, replacing it with any image from the @@paper that is most similar to our data.
+Our thyroid cancer data does not have an annotation image. Therefore, we will utilize similar data to create a mask generation model for our data. Also, the thyroid cancer data is restricted data belonging to our project and cannot be released to the public. Attach a picture of the experiment, replacing it with any image from the "Medullary Thyroid Carcinoma"[6] paper that is most similar to our data.
 
 ## Dataset source
 A total of 2656 images are available. 1328 Original blood cell images with 1328 corresponding ground truths. Out of that, Jeet B Lahiri separated the training and testing sets with 1169 images and 159 images respectively.
@@ -64,7 +64,7 @@ UnetAttention|UnetVGG11|
 
 [5] Vladimir Iglovikov, Alexey Shvets. TernausNet: U-Net with VGG11 Encoder Pre-Trained on ImageNet for Image Segmentation. arXiv, 2018. https://arxiv.org/abs/1801.05746
 
-[6] Michiya Nishino, Marc Philippe Pusztaszeri, Martha B. Pitman. Medullary Thyroid Carcinoma,In book: The Bethesda System for Reporting Thyroid Cytopathology (pp.157-175). ResearchGate, 2018. 
+[6] Michiya Nishino, Marc Philippe Pusztaszeri, Martha B. Pitman. Medullary Thyroid Carcinoma, In book: The Bethesda System for Reporting Thyroid Cytopathology (pp.157-175). ResearchGate, 2018. 
 https://www.researchgate.net/publication/319449480_Medullary_Thyroid_Carcinoma
 
 
