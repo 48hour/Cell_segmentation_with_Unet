@@ -29,11 +29,6 @@ Distributed under the CC BY NC SA 4.0
 ## Result
 
 ### Unet_grayscale & ResUnet_grayscale
-We can see in the traning history that Unet_grayscale is being overfitted. The same is true for RGB.
-
-For ResUnet, we noticed an exploding gradient in the loss value at certain epochs. We determined that the learning rate was too high to reach a local minimum.
-
-So we experimented by adding different models, schedulers, and early stopping.
 
 ##### Training History
 Epoch : 100 , Batch : 4, Optimizer : Adam, lr = 1e-4, Augmentation : random_flip
@@ -42,6 +37,11 @@ Unet|ResUnet|
 ---|---|
 ![ex_screenshot](./image/Unet_gray.png)|![ex_screenshot](./image/ResUnet_gray.png)|
 
+We can see in the traning history that Unet_grayscale is being overfitted. The same is true for RGB.
+
+For ResUnet, we noticed an exploding gradient in the loss value at certain epochs. We determined that the learning rate was too high to reach a local minimum.
+
+So we experimented by adding different models, schedulers, and early stopping.
 
 ### ResUnet, VGG11Unet, VGG16Unet, AttentionUnet with Early stoping & Learning rate scheduler 
 
