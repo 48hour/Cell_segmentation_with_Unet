@@ -50,16 +50,6 @@ UnetAttention|UnetVGG11|
 ![ex_screenshot](./image/UnetAttention.png)|![ex_screenshot](./image/UnetVGG16.png)|
 
 
-### VGG16Unet + Early stoping + Learning rate scheduler 
-
-![ex_screenshot](./img/IoU_VGG16Unet.png)|![ex_screenshot](./img/Loss_VGG16Unet.png)
----|---|
-
-### AttentionUnet + Early stoping + Learning rate scheduler 
-
-![ex_screenshot](./img/IoU_AttentionUnet.png)|![ex_screenshot](./img/Loss_AttentionUnet.png)
----|---|
-
 ## References
 [1] JEET B. LAHIRI. "Blood Cell Segmentation Dataset." Kaggle. July 10, 2023. https://www.kaggle.com/datasets/jeetblahiri/bccd-dataset-with-mask
 
