@@ -33,50 +33,26 @@ Epoch : 100 , Batch : 4, Optimizer : Adam, lr = 1e-4, Augmentation : random_flip
 ---|---|
 
 
-### ResUnet_grayscale + Early stoping + Learning rate scheduler 
+### ResUnet, VGG11Unet, VGG16Unet, AttentionUnet + Early stoping + Learning rate scheduler 
 
 ##### Training History
 Epoch : 100 , Batch : 4, Optimizer : Adam, lr = 1e-4, Augmentation : random_flip, patience = 10
-
-scheduler = StepLR(optim, step_size=1, gamma=0.95)
-
-Early stop : 42epochs
+scheduler = ReduceLROnPlateau(optim, mode='min', factor=0.5, patience=5, min_lr=1e-6)
 
 ![ex_screenshot](./img/IoU_ResUnet_scheduler.png)|![ex_screenshot](./img/Loss_ResUnet_scheduler.png)
 ---|---|
 
 ### VGG11Unet + Early stoping + Learning rate scheduler 
 
-##### Training History
-Epoch : 100 , Batch : 4, Optimizer : Adam, lr = 1e-4, Augmentation : random_flip, patience = 10
-
-scheduler = ReduceLROnPlateau(optim, mode='min', factor=0.5, patience=5, min_lr=1e-6)
-
-Early stop : 36epochs
-
 ![ex_screenshot](./img/IoU_VGG11Unet.png)|![ex_screenshot](./img/Loss_VGG11Unet.png)
 ---|---|
 
 ### VGG16Unet + Early stoping + Learning rate scheduler 
 
-##### Training History
-Epoch : 100 , Batch : 4, Optimizer : Adam, lr = 1e-4, Augmentation : random_flip, patience = 10
-
-scheduler = ReduceLROnPlateau(optim, mode='min', factor=0.5, patience=5, min_lr=1e-6)
-
-Early stop : 39epochs
-
 ![ex_screenshot](./img/IoU_VGG16Unet.png)|![ex_screenshot](./img/Loss_VGG16Unet.png)
 ---|---|
 
 ### AttentionUnet + Early stoping + Learning rate scheduler 
-
-##### Training History
-Epoch : 100 , Batch : 4, Optimizer : Adam, lr = 1e-4, Augmentation : random_flip, patience = 10
-
-scheduler = ReduceLROnPlateau(optim, mode='min', factor=0.5, patience=5, min_lr=1e-6)
-
-Early stop : 52epochs
 
 ![ex_screenshot](./img/IoU_AttentionUnet.png)|![ex_screenshot](./img/Loss_AttentionUnet.png)
 ---|---|
