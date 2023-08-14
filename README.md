@@ -45,10 +45,10 @@ ResUnet|UnetVGG11|
 ---|---|
 ![ex_screenshot](./image/ResUnet_sch.png)|![ex_screenshot](./image/UnetVGG11.png)|
 
-### VGG11Unet + Early stoping + Learning rate scheduler 
-
-![ex_screenshot](./img/IoU_VGG11Unet.png)|![ex_screenshot](./img/Loss_VGG11Unet.png)
+UnetAttention|UnetVGG11|
 ---|---|
+![ex_screenshot](./image/UnetAttention.png)|![ex_screenshot](./image/UnetVGG16.png)|
+
 
 ### VGG16Unet + Early stoping + Learning rate scheduler 
 
