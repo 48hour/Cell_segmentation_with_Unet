@@ -33,7 +33,7 @@ Epoch : 100 , Batch : 4, Optimizer : Adam, lr = 1e-4, Augmentation : random_flip
 ---|---|
 
 
-### ResUnet, VGG11Unet, VGG16Unet, AttentionUnet + Early stoping + Learning rate scheduler 
+### ResUnet, VGG11Unet, VGG16Unet, AttentionUnet with Early stoping & Learning rate scheduler 
 
 ##### Training History
 Epoch : 100 , Batch : 4, Optimizer : Adam, lr = 1e-4, Augmentation : random_flip, patience = 10
