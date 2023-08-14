@@ -1,11 +1,11 @@
 # Blood_cell_segmentation_with_Unet
 
 ## Overview
-Cell segmentation plays an important role in the detection and classification of tumor or disease cells in the context of pathological tissue examination. The segmentation of cancerous tissue help in the development of cancer diagnosis and treatment. 
+For thyroid cancer and many other types of cancer, processes such as fine needle aspiration cytology and cytoreductive testing are essential. Cancer is diagnosed by looking at the cells. Artificial intelligence can be added to this process to bring convenience and speed to diagnosis. In addition, cell segmentation is important for the detection and classification of tumor or disease cells in the context of pathological tissue examination. The segmentation of cancer tissue helps in the development of cancer diagnosis and treatment. 
 
-To create a diagnostic model, we need to understand how cancer cells are distributed and how many there are. For this purpose, we tried cell segmentation with Unet and ResUnet architecture. Then we used OpenCV Water shade function to understand the distribution and number.
+Medical AI should be reliable by ensuring that the process of deriving results is differentiated and transparent. To make the thyroid cancer diagnosis model reliable, we identify the distribution and number of cancer cells. For this purpose, we tried cell segmentation with various architectures based on Unet. After creating a mask, we use OpenCV's watershed function to identify the number and distribution.
 
-In order to diagnose with AI and convince users, it is essential to explain fine needle aspiration cytology, cell exclusion test, etc. used in various tests.
+Our thyroid cancer data does not have an annotation image. Therefore, we will utilize similar data to create a mask generation model for our data. Also, the thyroid cancer data is restricted data belonging to our project and cannot be released to the public. Attach a picture of the experiment, replacing it with any image from the @@paper that is most similar to our data.
 
 ## Dataset source
 A total of 2656 images are available. 1328 Original blood cell images with 1328 corresponding ground truths. Out of that, Jeet B Lahiri separated the training and testing sets with 1169 images and 159 images respectively.
@@ -20,7 +20,7 @@ Distributed under the MIT License.
 ## Result
 
 ### Unet_grayscale & ResUnet_grayscale
-You can see in the traning history that Unet_grayscale is being overfitted. The same is true for RGB.
+We can see in the traning history that Unet_grayscale is being overfitted. The same is true for RGB.
 
 For ResUnet, we noticed an exploding gradient in the loss value at certain epochs. We determined that the learning rate was too high to reach a local minimum.
 
