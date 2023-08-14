@@ -82,9 +82,9 @@ UnetVGG11|UnetVGG16|
 ---|---|
 ![ex_screenshot](./image/Add_data_VGG11.png)|![ex_screenshot](./image/Add_data_VGG16.png)|
 
-UnetAttention||
+UnetAttention| |
 ---|---|
-![ex_screenshot](./image/Add_data_Attention.png)
+![ex_screenshot](./image/Add_data_Attention.png)| 
 
 We excluded early stopping to see the overall performance. Unet is overfitting. ResUnet suffers from gradient exploding. VGG11, VGG16, and Attention models showed ideal traning history.
 
