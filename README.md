@@ -1,4 +1,4 @@
-# Thyroid_cell_segmentation_and_Count_with_Unet_n_OpenCV
+# Cell_segmentation_with_Unet
 
 ## Overview
 For thyroid cancer and many other types of cancer, processes such as fine needle aspiration cytology and cytoreductive testing are essential. Cancer is diagnosed by looking at the cells. Artificial intelligence can be added to this process to bring convenience and speed to diagnosis. In addition, cell segmentation is important for the detection and classification of tumor or disease cells in the context of pathological tissue examination. The segmentation of cancer tissue helps in the development of cancer diagnosis and treatment. 
