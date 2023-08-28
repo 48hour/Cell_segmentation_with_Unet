@@ -111,7 +111,7 @@ Inference images|_
 ---|---|
 ![ex_screenshot](./image/Inference_iamges1.png)|![ex_screenshot](./image/Inference_iamges2.png)
 
-Runtime & Memory with SAM
+Runtime & Memory with SAM for 1000 images
 
 ![ex_screenshot](./image/Runtim&gpu,cpu.png)
 
