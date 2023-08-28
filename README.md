@@ -89,6 +89,35 @@ UnetAttention| |
 
 We excluded early stopping to see the overall performance. Unet is overfitting. ResUnet suffers from gradient exploding. VGG11, VGG16, and Attention models showed ideal traning history.
 
+RGB
+Attention|VGG11|VGG16
+---|---|---|
+![ex_screenshot](./image/Att_RGB.png)|![ex_screenshot](./image/VGG11_RGB.png)|![ex_screenshot](./image/VGG16_RGB.png)
+
+Grayscale
+Attention|VGG11|VGG16
+---|---|---|
+![ex_screenshot](./image/Att_gray.png)|![ex_screenshot](./image/VGG11_gray.png)|![ex_screenshot](./image/VGG16_gray.png)
+
+We trained VGG11, VGG16, and Attention on RGB and Grayscale with early-starting and tested them on our data.
+
+They all performed poorly on things that are difficult to distinguish with the eye.
+
+Based on the effectiveness in removing impurities, lines and fluids, and good cell separation, attention-Unet was the best. attention-Unet performed the best.
+
+Below is the inference of thyroid images in the paper with Attention_Unet_gray.
+
+Inference images
+---|---|
+![ex_screenshot](./image/Inference_iamges1.png)|![ex_screenshot](./image/Inference_iamges2.png)
+
+Runtime & Memory with SAM
+
+---|
+![ex_screenshot](./image/Runtim&gpu,cpu.png)
+
+Additionally, we tried Meta's Segment Anything Model and it performed well, but we couldn't adopt it due to its long run time and high memory usage.
+
 ## References
 [1] JEET B. LAHIRI. "Blood Cell Segmentation Dataset." Kaggle. 2023. https://www.kaggle.com/datasets/jeetblahiri/bccd-dataset-with-mask
 
@@ -114,6 +143,3 @@ https://arxiv.org/abs/2003.10778
 
 ## License
 Distributed under the MIT License.
-
-
-
