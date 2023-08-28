@@ -107,9 +107,9 @@ Based on the effectiveness in removing impurities, lines and fluids, and good ce
 
 Below is the inference of thyroid images in the paper with Attention_Unet_gray.
 
-Inference images|
+Inference images|ㅁㄴㅇ
 ---|---|
-![ex_screenshot](./image/Inference_iamges1.png)|![ex_screenshot](./image/Inference_iamges2.png)|
+![ex_screenshot](./image/Inference_iamges1.png)|![ex_screenshot](./image/Inference_iamges2.png)
 
 Runtime & Memory with SAM
 
