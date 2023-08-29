@@ -12,15 +12,11 @@ Our purpose is to segment thyroid cancer data. However, our data does not have a
 A total of 2656 images are available. 1328 Original blood cell images with 1328 corresponding ground truths. Out of that, Jeet B Lahiri separated the training and testing sets with 1169 images and 159 images respectively.
 Data gernerate by Deponker, Sarker Depto, Shazidur Rahman, Md. Mekayel Hosen, Mst Shapna Akter, Tamanna Rahman Reme, Aimon Rahman, Hasib Zunai, M. Sohel Rahman and M.R.C.Mahdy
 
-![ex_screenshot](./image/Dataset_img.png)
-
 Distributed under the MIT License.
 
 ### 2) Larxel. "Cancer Instance Segmentation and Classification 1,2,3" Kaggle. 2022.
 This dataset, also known as PanNuke, contains semi automatically generated nuclei instance segmentation and classification images with exhaustive nuclei labels across 19 different tissue types. The dataset consists of 481 visual fields, of which 312 are randomly sampled from more than 20K whole slide images at different magnifications, from multiple data sources.
 In total the dataset contains 205,343 labeled nuclei, each with an instance segmentation mask. Models trained on PanNuke can aid in whole slide image tissue type segmentation, and generalize to new tissues.
-
-![ex_screenshot](./image/Dataset_img2.png)
 
 Distributed under the CC BY NC SA 4.0
 
