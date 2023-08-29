@@ -30,6 +30,8 @@ Based on IoU matrix The best performance was VGG16_RGB.
 
 Based on the effectiveness in removing impurities, lines and fluids, and good cell separation, Attention_Unet_Grayscael performed the best.
 
+
+
 We further compared it with the Meta SAM model. The performance was marginally better. We compared run time and memory usage.
  
 SAM uses Vit structure, which requires a large capitalization compared to based_Unet.
