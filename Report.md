@@ -1,11 +1,11 @@
 # Cell_segmentation_with_Unet
 
 ## Overview
-For thyroid cancer and many other types of cancer, processes such as fine needle aspiration cytology and cytoreductive testing are essential. Cancer is diagnosed by looking at the cells. Artificial intelligence can be added to this process to bring convenience and speed to diagnosis. In addition, cell segmentation is important for the detection and classification of tumor or disease cells in the context of pathological tissue examination. The segmentation of cancer tissue helps in the development of cancer diagnosis and treatment. 
+For some types of cancer, a cytology test is essential, such as a fine needle aspiration cytology or an exclusion cytology test. Cancer is diagnosed by observing cells. Adding artificial intelligence to this process can make diagnosis easier and faster. In addition, cell segmentation is important for detection and classification in pathology. Segmentation of cancerous tissue helps in the development of cancer diagnosis and treatment.
 
-Medical AI should be reliable by ensuring that the process of deriving results is differentiated and transparent. To make the thyroid cancer diagnosis model reliable, we identify the distribution and number of cancer cells. For this purpose, we tried cell segmentation with various architectures based on Unet. After creating a mask, we use OpenCV's watershed function to identify the number and distribution.
+To increase the reliability of our diagnostic model, we identified the distribution and number of cancer cells. For this purpose, we tried cell segmentation with different architectures based on Unet. After creating a mask, we used OpenCV's Contour function to determine the number and distribution of cancer cells.
 
-Our thyroid cancer data does not have an annotation image. Therefore, we will utilize similar data to create a mask generation model for our data. Also, the thyroid cancer data is restricted data belonging to our project and cannot be released to the public. Attach a picture of the experiment, replacing it with any image from the "Medullary Thyroid Carcinoma"[6] paper that is most similar to our data.
+Our purpose is to segment thyroid cancer data. However, our data does not have annotated images. Therefore, we utilize similar data to develop a mask generation model for our data. Also, the thyroid cancer data is limited data belonging to our project and is not available to the public. We replace it with images from the paper "Medullary Thyroid Cancer" [6], which is most similar to our data.
 
 ## Dataset source
 ### 1) JEET B. LAHIRI. "Blood Cell Segmentation Dataset." Kaggle. 2023.
