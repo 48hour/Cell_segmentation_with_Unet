@@ -26,6 +26,8 @@ In total the dataset contains 205,343 labeled nuclei, each with an instance segm
 
 Distributed under the CC BY NC SA 4.0
 
+The second data is instance segment, so the annotation is different. I loaded the npy data using the dataset processing.ipynb code to load the original images and annotation labels and preprocessed them into a binary mask.
+
 ## Result
 
 ### Unet_grayscale & ResUnet_grayscale
