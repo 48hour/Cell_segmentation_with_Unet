@@ -1,11 +1,9 @@
 # Cell_segmentation_with_Unet
 
 ## Overview
-For some types of cancer, a cytology test is essential, such as a fine needle aspiration cytology or an exclusion cytology test. Cancer is diagnosed by observing cells. Adding artificial intelligence to this process can make diagnosis easier and faster. In addition, cell segmentation is important for detection and classification in pathology. Segmentation of cancerous tissue helps in the development of cancer diagnosis and treatment.
-
-To increase the reliability of our diagnostic model, we identified the distribution and number of cancer cells. For this purpose, we tried cell segmentation with different architectures based on Unet. After creating a mask, we used OpenCV's Contour function to determine the number and distribution of cancer cells.
-
-Our purpose is to segment thyroid cancer data. However, our data does not have annotated images. Therefore, we utilize similar data to develop a mask generation model for our data. Also, the thyroid cancer data is limited data belonging to our project and is not available to the public. We replace it with images from the paper "Medullary Thyroid Cancer" [6], which is most similar to our data.
+Cytology tests such as fine needle aspiration (FNA) and exclusion cytology test, play crucial role in some types of cancer treatment. Usually cancer is diagnosed by observations of cells in image-based cellular research. Because these processes are simple and repetitive, applying artificial intelligence (AI) makes the process much easier and efficiently. AI is also very powerful tools for cell segmentation which is important for detection and classification in pathology. Therefore, AI will be the key technology for segmentation of cancerous tissue which is the main process of the cancer diagnosis and treatment.
+To increase the reliability of our diagnostic model, we identified the distribution and number of cancer cells. For this purpose, we tried cell segmentation with different architectures based on Unet. After creating a mask, we used OpenCV’s Contour function to determine the number and distribution of cancer cells.
+The main goal is the segmentation of thyroid cancer data. Because our data does not have annotated images, we utilized similar data to develop a mask generation model of the data. Additionally, the thyroid cancer data is limited which belongs to our project and is not publicly available. We replace it with images from the paper “Medullary Thyroid Cancer” [6], which is the most similar data compare to ours.
 
 ## Dataset source
 ### 1) JEET B. LAHIRI. "Blood Cell Segmentation Dataset." Kaggle. 2023.
@@ -21,10 +19,11 @@ In total the dataset contains 205,343 labeled nuclei, each with an instance segm
 Distributed under the CC BY NC SA 4.0
 
 ## Result
-Unet, Res_Unet, Attention_Unet, VGG11 & 16 Unet structures were used.
-Unet and Res_Unet were overfitting.
-We compared three models, Attention_Unet, VGG11 & 16 Unet.
-Based on IoU matrix The best performance was VGG16_RGB.
+Unet, Res_Unet, Attention_Unet, VGG11 & 16 Unet structures were used. Unet and Res_Unet were overfitting. We compared three models, Attention_Unet, VGG11 & 16 Unet. Based on IoU matrix, VGG16_RGB showed the best performance.
+Based on the effectiveness in removing impurities, lines and fluids, and good cell separation, Attention_Unet_Grayscael showed the best performance.
+Furthermore, we compared it with the Meta SAM model for 1000 images. We organized the run time and memory usage, and found that the performance was gotten marginally better.
+SAM uses Vit structure, which requires a large capitalization compared to based_Unet.
+
 
 ![ex_screenshot](./image/Compare_IoU.png)
 
